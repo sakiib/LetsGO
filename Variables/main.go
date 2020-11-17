@@ -22,6 +22,9 @@ var (
 // package level or global declaration? Be careful, shorthand declaration can't be used here.
 var num int = 100
 
+// cannot declare variable multiple times under the same scope
+// declared variables must be used somewhere in the code, compile-time error otherwise.
+
 func main() {
 	
 	// this is a comment 
