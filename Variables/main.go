@@ -4,6 +4,9 @@ import (
 	"fmt"
 )
 
+// package level or global declaration? Be careful, shorthand declaration can't be used here.
+var num int = 100
+
 func main() {
 	
 	// this is a comment 
