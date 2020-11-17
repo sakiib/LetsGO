@@ -4,6 +4,21 @@ import (
 	"fmt"
 )
 
+
+// instead of declaring var everytime like this.. 
+var firstName string = "sakib"
+var lastName string = "alamin"
+var company string = "appscode"
+var id int = 12345
+
+// .. we can do this.
+var (
+	firstName string = "sakib"
+	lastName string = "alamin"
+	company string = "appscode"
+	id int = 12345
+)
+
 // package level or global declaration? Be careful, shorthand declaration can't be used here.
 var num int = 100
 
