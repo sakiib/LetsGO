@@ -36,6 +36,9 @@ func main() {
 	// declaring a variable j which is an int type variable
 	var j int = 10
 	
+	// if we don't mention the type, then it'll see the value & assign the type, string for this instance
+	var name = "sakib"
+	
 	// shorthand for declarign & assigning values to a new variable
 	k:= 15
 	
