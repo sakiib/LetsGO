@@ -17,4 +17,12 @@ func main() {
 			fmt.Printf("%v is Odd\n", i)
 		}
 	}
+	
+	for i := 1; i <= n; i++ {
+		reminder := i % 2
+		switch reminder {
+			case 0: fmt.Println("Even")
+			case 1: fmt.Println("Odd")
+		}
+	}
 }
