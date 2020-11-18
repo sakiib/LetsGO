@@ -25,4 +25,19 @@ func main() {
 	for _, value := range ara {
 		fmt.Println(value)
 	}
+	
+	// assign these values in first 5 indices & rests are filled with zeros
+	// Notice: we can use an extra comma at the last position, mainly to easily comment out some values from last
+	x := [10] int {98, 93, 77, 82, 83, }
+	fmt.Println(x)
+	
+	// we can be break this down into separate lines
+	y := [5] string {
+		"gone",
+		"with",
+		"the",
+		"wind",
+	}
+	
+	fmt.Println(y)
 }
