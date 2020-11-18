@@ -19,4 +19,10 @@ func main() {
 	for index, value := range ara {
 		fmt.Println(index, value)
 	}
+	
+	// say we want to iterate like this, but don't wanna use index
+	// so, to avoid getting compile time error, we use the '_' underscore, it can't be used as index
+	for _, value := range ara {
+		fmt.Println(value)
+	}
 }
