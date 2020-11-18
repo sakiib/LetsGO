@@ -11,4 +11,8 @@ func main() {
 	ara[4] = 5
 	fmt.Println(ara)
 	fmt.Println(ara[0])
+	
+	for i := 0; i < len(ara); i++ {
+		fmt.Println(ara[i])
+	}
 }
