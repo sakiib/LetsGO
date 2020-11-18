@@ -1,5 +1,5 @@
 # LetsGO
-Learning the very basics of Go programming language (Golang) in the step-by-step tutorial course from [freeCodeCamp.org](https://www.youtube.com/watch?v=YS4e4q9oBaU&t=2273s&ab_channel=freeCodeCamp.org)
+Learning the very basics of Go programming language (Golang) in these step-by-step tutorial course from [freeCodeCamp.org](https://www.youtube.com/watch?v=YS4e4q9oBaU&t=2273s&ab_channel=freeCodeCamp.org) & [Traversy Media](https://www.youtube.com/watch?v=SqrbIlUwR0U&t=947s&ab_channel=TraversyMedia)
 
 ### Resources:
 
