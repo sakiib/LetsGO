@@ -15,4 +15,8 @@ func main() {
 	for i := 0; i < len(ara); i++ {
 		fmt.Println(ara[i])
 	}
+	
+	for index, value := range ara {
+		fmt.Println(index, value)
+	}
 }
