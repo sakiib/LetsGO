@@ -50,4 +50,24 @@ func main() {
 	fmt.Print(i, j, k)
 	fmt.Println(i, j, k)
 	
+	// MAIN DATA TYPES
+	// string
+	// bool
+	// int
+	// int  int8  int16  int32  int64
+	// uint uint8 uint16 uint32 uint64 uintptr
+	// byte - alias for uint8
+	// rune - alias for int32
+	// float32 float64
+	// complex64 complex128
+	
+	var isPrime bool = false
+	fmt.Printf("%v, %T\n", isPrime, isPrime)
+	
+	const number int = 10
+	// can't redefine the value as number is a constant
+	// number += 10
+	
+	fmt.Println(number + 10)
+	
 }
