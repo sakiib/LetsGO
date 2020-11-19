@@ -95,4 +95,20 @@ func main() {
 	// but, if we pass a third argument, it's the capacity of the slice, len & size need not to be the same
 	a := make([]int, 3, 10)
 	fmt.Println(a, len(a), cap(a)) // [0 0 0] 3 10
+	
+	
+	// maps
+	a := 1
+	b := 1
+	c := 3
+	m := make(map[int] int)
+	m[a] ++
+	m[b] ++
+	m[c] ++
+	f := m[1]
+	fmt.Println(f)
+	delete(m, c)
+	for key, val := range m {
+	    fmt.Println(key, val)
+	}
 }
