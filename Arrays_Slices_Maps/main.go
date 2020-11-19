@@ -72,4 +72,8 @@ func main() {
 	b[1] = 10
 	fmt.Println(a) // 1, 10, 3
 	fmt.Println(b) // 1, 10, 3
+	
+	// length & capacity -> they aren't same
+	fmt.Println(len(a))
+	fmt.Println(cap(a))
 }
