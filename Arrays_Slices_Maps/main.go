@@ -92,4 +92,7 @@ func main() {
 	// creating slice using make
 	a := make([]int, 3)
 	fmt.Println(a, len(a), cap(a)) // [0 0 0] 3 3
+	// but, if we pass a third argument, it's the capacity of the slice, len & size need not to be the same
+	a := make([]int, 3, 10)
+	fmt.Println(a, len(a), cap(a)) // [0 0 0] 3 10
 }
