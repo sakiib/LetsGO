@@ -12,6 +12,7 @@ func abs(x int, y int) int {
 	}
 }
 
+// using slices
 func main() {
 	var (
 		n int
@@ -38,3 +39,30 @@ func main() {
 
 	fmt.Println(ans)
 }
+
+// using array
+func main() {
+	const N int = 1000 + 1
+	var (
+		n int
+		d int
+	)
+	fmt.Scan(&n, &d)
+
+	var ara [N]int
+	for i := 0; i < n; i++ {
+		fmt.Scan(&ara[i])
+	}
+
+	ans := 0
+	for i := 0; i < n; i++ {
+		for j := i + 1; j < n; j++ {
+			if abs(ara[i], ara[j]) <= d {
+				ans++
+			}
+		}
+	}
+
+	fmt.Println(2 * ans)
+}
+
