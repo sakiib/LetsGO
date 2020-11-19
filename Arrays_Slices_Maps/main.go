@@ -40,4 +40,8 @@ func main() {
 	}
 	
 	fmt.Println(y)
+	
+	// no need to define size of the array with three dotes
+	numbers := [...] int {1, 2, 3, 4, 5}
+	fmt.Println(numbers)
 }
