@@ -64,4 +64,12 @@ func main() {
 	b[1] = 10
 	fmt.Println(a) // 1, 2, 3
 	fmt.Println(b) // 1, 10, 3
+	
+	// slices, size need not to be defined
+	// unlike array, slices actually points to the array a, from which b is assigned, so both go changed, like pointers do
+	a := [] int {1, 2, 3}
+	b := a
+	b[1] = 10
+	fmt.Println(a) // 1, 10, 3
+	fmt.Println(b) // 1, 10, 3
 }
