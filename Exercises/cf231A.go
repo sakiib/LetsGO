@@ -5,8 +5,8 @@ import (
 )
  
 func main() {
-  const N int = 1000 + 1
-  var ara [N][3]int 
+  	const N int = 1000 + 1
+  	var ara [N][3]int 
     
 	var problems int
 	fmt.Scan(&problems)
