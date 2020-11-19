@@ -44,4 +44,17 @@ func main() {
 	// no need to define size of the array with three dotes
 	numbers := [...] int {1, 2, 3, 4, 5}
 	fmt.Println(numbers)
+	
+	// 2-D array
+	var identityMatrix [3][3] int
+	identityMatrix[0] = [3] int {1, 0, 0}
+	identityMatrix[1] = [3] int {0, 1, 0}
+	identityMatrix[2] = [3] int {0, 0, 1}
+	fmt.Println(identityMatrix)
+	for i := 0; i < 3; i++ {
+		for j := 0; j < 3; j++ {
+			fmt.Print(identityMatrix[i][j], " ")
+		}
+		fmt.Println()
+	}
 }
