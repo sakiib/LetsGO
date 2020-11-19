@@ -7,7 +7,7 @@ import (
 func main() {
 	var s string
 	fmt.Scan(&s)
-  // no char in go :(
+  	// no char in go :(
 	for i := 0; i < len(s); i++ {
 		cur := s[i : i+1]
 		if cur == "." {
