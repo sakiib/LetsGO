@@ -88,4 +88,8 @@ func main() {
 	fmt.Println(c)
 	fmt.Println(d)
 	fmt.Println(e)
+	
+	// creating slice using make
+	a := make([]int, 3)
+	fmt.Println(a, len(a), cap(a)) // [0 0 0] 3 3
 }
