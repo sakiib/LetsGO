@@ -57,4 +57,11 @@ func main() {
 		}
 		fmt.Println()
 	}
+	
+	// array is just like values, doesn't point to the originl array while assigning, it just copies it
+	a := [...] int {1, 2, 3}
+	b := a
+	b[1] = 10
+	fmt.Println(a) // 1, 2, 3
+	fmt.Println(b) // 1, 10, 3
 }
