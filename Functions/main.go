@@ -44,7 +44,13 @@ func binarySearch(cnt int) bool {
     }
     return false
 }
- 
+
+// function can return multiple values
+func myFunc(x int, y int) (int, int) {
+	return y, x
+}
+
 func main() {
-	  
+	first, second := myFunc(10, 20)
+	fmt.Println(first, second)
 }
