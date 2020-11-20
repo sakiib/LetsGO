@@ -67,4 +67,12 @@ func main() {
 	fmt.Println(first, second)
 	
 	fmt.Println(calcSum("sakib", 1, 2, 3, 4, 5))
+	
+	// closures 
+	// It is possible to create functions inside of functions
+	// addTwo is a local variable that has the type func(int, int) int (a function that takes two ints and returns an int).
+	addTwo := func(x, y int) int {
+		return x + y
+	}
+	fmt.Println(addTwo(5, 10))
 }
