@@ -50,7 +50,21 @@ func myFunc(x int, y int) (int, int) {
 	return y, x
 }
 
+// variadic function
+// By using ... before the type name of the last parameter we can indicate that it takes zero or more of those parameters.
+// This is precisely how the fmt.Println function is implemented
+ 
+func calcSum(name string, args ...int) int {
+	sum := 0
+	for _, val := range args {
+		sum += val
+	}
+	return sum
+}
+
 func main() {
 	first, second := myFunc(10, 20)
 	fmt.Println(first, second)
+	
+	fmt.Println(calcSum("sakib", 1, 2, 3, 4, 5))
 }
