@@ -28,7 +28,6 @@ func main() {
 	fmt.Println(person1)
 	fmt.Println(person1.Name, person1.Id)
 	
-	
 	var personList []Person
 	personList = append(personList, Person{Name: "messi", Id: 1})
     	personList = append(personList, Person{Name: "cr7", Id: 3})
