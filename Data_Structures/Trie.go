@@ -54,11 +54,14 @@ func (t *trie) find(word string) bool {
 
 func main() {
 	trie := initTrie()
+	
 	words := []string{"sam", "john", "tim", "jose", "rose", "cat", "dog", "dogg", "roses"}
 	for i := 0; i < len(words); i++ {
 		trie.insert(words[i])
 	}
+	
 	wordsToFind := []string{"sam", "john", "tim", "jose", "rose", "cat", "dog", "dogg", "roses", "rosess", "ans", "san"}
+	
 	for i := 0; i < len(wordsToFind); i++ {
 		found := trie.find(wordsToFind[i])
 		if found {
@@ -68,3 +71,5 @@ func main() {
 		}
 	}
 }
+
+// credit: https://golangbyexample.com/trie-implementation-in-go/
