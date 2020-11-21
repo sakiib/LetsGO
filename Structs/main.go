@@ -10,10 +10,24 @@ type Person struct {
 	Id   int
 }
 
+// in-case we have another struct reference 
+type Person struct {
+	Name string
+	Id   int
+	Language *Language
+}
+
+type Language struct {
+    Name string
+    Id int
+    Exp string
+}
+
 func main() {
 	person1 := Person{Name: "sakib", Id: 1}
 	fmt.Println(person1)
 	fmt.Println(person1.Name, person1.Id)
+	
 	
 	var personList []Person
 	personList = append(personList, Person{Name: "messi", Id: 1})
@@ -33,4 +47,8 @@ func main() {
     	for _, person := range personList {
 		fmt.Println(person.Name, person.Id)
     	}
+	
+	// struct Person have another reference to struct Language
+	person1 := Person{Name: "sakib", Id: 1, Language: &Language{Name: "C++", Id: 1, Exp: "Good"}}
+	fmt.Println(person1.Name, person1.Id, person1.Language.Name, person1.Language.Id, person1.Language.Exp)
 }
