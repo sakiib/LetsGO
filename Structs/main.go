@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sort"
 )
 
 type Person struct {
@@ -19,7 +20,15 @@ func main() {
     	personList = append(personList, Person{Name: "cr7", Id: 3})
    	personList = append(personList, Person{Name: "sakib", Id: 4})
     	personList = append(personList, Person{Name: "alamin", Id: 2})
-
+	
+	s := []int{4, 2, 3, 1}
+	sort.Ints(s)
+	
+	// Sort by Id, keeping original order or equal elements.
+    	sort.SliceStable(personList, func(i, j int) bool {
+       		return personList[i].Id < personList[j].Id
+    	})
+	
     	for _, person := range personList {
 		fmt.Println(person.Name, person.Id)
     	}
