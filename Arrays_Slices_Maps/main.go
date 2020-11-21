@@ -111,4 +111,22 @@ func main() {
 	for key, val := range m {
 	    fmt.Println(key, val)
 	}
+	
+	m := make(map[string]int)
+	// if key exists only, ok = true
+	val, ok := m["some_key"]
+	if ok {
+		fmt.Println(val)
+	}
+	
+	// if we need to check the existence only
+	_, ok := m["some_key"]
+	if ok {
+		fmt.Println("key exists")
+	}
+	
+	// we can improve the conditionals also, there's a semicolon OMG!
+	if val, ok := m["some_key"]; ok {
+		fmt.Println(val)
+	}
 }
