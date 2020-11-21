@@ -25,4 +25,10 @@ func main() {
 			case 1: fmt.Println("Odd")
 		}
 	}
+	
+	m := make(map[string] int)
+	// we can improve the conditionals also, there's a semicolon OMG!
+	if val, ok := m["some_key"]; ok {
+		fmt.Println(val)
+	}
 }
