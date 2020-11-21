@@ -23,6 +23,7 @@ func main() {
 	
 	s := []int{4, 2, 3, 1}
 	sort.Ints(s)
+	fmt.Println(s)
 	
 	// Sort by Id, keeping original order or equal elements.
     	sort.SliceStable(personList, func(i, j int) bool {
