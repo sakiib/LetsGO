@@ -5,12 +5,12 @@ import (
 )
 
 type Person struct {
-	name string
-	id   int
+	Name string
+	Id   int
 }
 
 func main() {
-	person1 := Person{name: "sakib", id: 1}
+	person1 := Person{Name: "sakib", Id: 1}
 	fmt.Println(person1)
-	fmt.Println(person1.name, person1.id)
+	fmt.Println(person1.Name, person1.Id)
 }
