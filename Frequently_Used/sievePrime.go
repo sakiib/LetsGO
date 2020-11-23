@@ -14,6 +14,9 @@ func sievePrime(n int) []int {
 	}
 	isPrime[0] = false
 	isPrime[1] = false
+	for i := 4; i <= n; i += 2 {
+		isPrime[i] = false
+	}
 	for i := 3; i*i <= n; i += 2 {
 		if isPrime[i] {
 			for j := i * i; j <= n; j += 2 * i {
