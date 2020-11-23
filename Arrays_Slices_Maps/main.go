@@ -89,6 +89,9 @@ func main() {
 	fmt.Println(d)
 	fmt.Println(e)
 	
+	// 2D slices, how we store graph. e.g: vector <int> graph[N]
+	var graph [N][]int
+	
 	// creating slice using make
 	a := make([]int, 3)
 	fmt.Println(a, len(a), cap(a)) // [0 0 0] 3 3
