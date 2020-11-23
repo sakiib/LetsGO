@@ -1,3 +1,5 @@
+// takes two or more arguments & finds the maximum
+
 func max(a int, b int, args ...int) int {
 	mx := a
 	if b > mx {
@@ -10,6 +12,8 @@ func max(a int, b int, args ...int) int {
 	}
 	return mx
 }
+
+// takes two or more arguments & finds the minimum
 
 func min(a int, b int, args ...int) int {
 	mn := a
