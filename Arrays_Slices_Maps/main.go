@@ -4,6 +4,9 @@ import (
 	"fmt"
 )
 
+// declare map in package level
+var dp = make(map[int]int)
+
 func main() {
 	var ara [5] int
 	ara[0] = 1
