@@ -11,8 +11,8 @@ func main() {
 	stack = append(stack, 3)
 	fmt.Println(stack)
 	for len(stack) > 0 {
-	    n := len(stack) - 1
-        fmt.Println(stack[n])
-        stack = stack[:n] 
+	    	n := len(stack) - 1
+        	fmt.Println(stack[n])
+        	stack = stack[:n] 
 	}
 }
